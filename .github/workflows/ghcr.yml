@@ -21,7 +21,7 @@ jobs:
         with:
           fetch-depth: 0 # Required to fetch all tags
 
-      - name: Get latest Git tag or use '0'
+      - name: Get latest Git tag or use '2'
         id: tag
         run: |
           TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "2")
