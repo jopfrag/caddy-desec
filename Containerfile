@@ -12,4 +12,4 @@ COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
 ENTRYPOINT [ "/usr/bin/caddy" ]
 
-CMD [ "run", "--config", "/etc/caddy/Caddyfile" ]
+CMD [ "run", "--resume", "--config", "/etc/caddy/Caddyfile" ]
